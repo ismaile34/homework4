@@ -19,7 +19,6 @@ int secmax(int[] MyArr)
 {
     int max;
     int max2;
-    MyArr = genArray(8);
     if (MyArr[0] > MyArr[1])
     {
         max = MyArr[0];
@@ -30,7 +29,7 @@ int secmax(int[] MyArr)
         max = MyArr[1];
         max2 = MyArr[0];
     }
-    for (int i = 0; i <= MyArr.Length; i++)
+    for (int i = 0; i < MyArr.Length; i++)
     {
         if (MyArr[i] > max)
         {
@@ -44,6 +43,7 @@ int secmax(int[] MyArr)
     }
     return max2;
 }
+
 // Вывод массива в консоль
 void printArray(int[] array)
 {
@@ -59,3 +59,4 @@ void printArray(int[] array)
 int[] array = genArray(8);
 printArray(array);
 secmax(array);
+System.Console.WriteLine(secmax(array));
