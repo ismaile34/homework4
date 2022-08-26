@@ -59,4 +59,4 @@ void printArray(int[] array)
 int[] array = genArray(8);
 printArray(array);
 secmax(array);
-System.Console.WriteLine(secmax(array));
+System.Console.WriteLine($"Второй максимум = {secmax(array)}");
